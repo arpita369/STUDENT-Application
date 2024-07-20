@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILS</title>
+    <link rel="stylesheet" href="std_stylesheet.css">
+</head>
+<body id="body">
+    <form action="" method="post">
+        <center>
+            <div class="admin">
+                <h1>ADMIN LOGIN</h1><hr>
+                <P><input type="text"name="name"placeholder='Username'id='uname'><br></P>
+                <P><input type="password"name='password'placeholder='Password'id='pwd'><br></P>
+                <input type="button" name="log" id="logbutton" value= "Login"onclick="verify()">
+            </div>
+        </center>
+    </form>
+    <script>
+        function verify()
+            {
+                var um= document.getElementById("uname").value;
+                var pd= document.getElementById("pwd").value;
+                if((um=="arpita" || um=="shibam") && pd=="GCETTS369" )
+                {
+                    alert("***Access Confirmed");    window.location.href="https://docs.google.com/spreadsheets/d/1MeQgyTjBKHlFePshzlCDL7UU195gm-nuajpONIgnLWI/edit#gid=0";
+                }    
+                else
+                    alert('***Access denied');
+            }
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="std_stylesheet.css">
+    <title>ENTER DETAILS</title>
+</head>
+<body id="fbody">
+    <form id = "blank_form">
+        <div class="form">
+            <center><h1 id="login">LOGIN CREDENTIALS</h1><hr></center>
+            <h2 id="heading">Basic Details</h2><hr>
+            <P>NAME:<input type="text"name="name"placeholder="Enter Name"id="fbox"><br></P>
+            <p>GENDER:
+                <select name="gender" id="gen">
+                    <option value="">--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </p><hr>
+            <h2 id="heading">Contact Details</h2><hr>
+            <P>EMAIL ID:<input type="email"name='email'placeholder="Enter Email id"id="fbox"><br></P>
+            <P>CONTACT NO:<input type="tel"name='phn'placeholder="Enter Phn no."id="fbox"><br></P><hr>
+            <h2 id="heading">Admission Details</h2><hr>
+            <p>SEMESTER: <input type="text"name='sem'placeholder="Semester"id="fbox"></p>
+            <P>REGISTRATION NO:<input type="text"name='reg'placeholder="Enter Regn. no."id="fbox"><br></P>
+            <P>UNIVERSITY ROLL NO:<input type="number"name='roll'placeholder="Enter Roll no."id="fbox"><br></P>
+            <P>ADMISSION DATE:<input type="date"name='date'id="fbox"><br></P><hr><br><br>
+            <center><input type="submit" value='Save' id="sub"></center>
+        </div>
+    </form>
+    <script>
+        var form = document.querySelector("form");
+        const formToReset = document.getElementById("blank_form");
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let data = new FormData(form);
+            fetch('https://script.google.com/macros/s/AKfycbwfK7O2w2XAwC2QcI-Z6Go-NPxgi-1Yyv4qgyPwF68hl2RHjmj7TQUPRELKj6AZvlyF4A/exec', {
+                method: "POST", 
+                body: data
+            })
+        })
+        formToReset.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formToReset.reset();
+        })
+    </script>
+</body>
+</html>

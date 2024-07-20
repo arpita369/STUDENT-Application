@@ -1,0 +1,155 @@
+/* std_portal */
+#body{
+    display: flex;
+    justify-content: center;
+    background-image: url("GCETTS.jpg");
+    padding: auto;
+    height: 100;
+    margin: 200px; 
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.box{
+    background-color: rgb(248, 231, 214);
+    color: rgb(209, 169, 143);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    height: 1000;
+    border-radius: 15px;
+}
+#info{
+    background-color: rgb(112, 6, 6);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+#ed{
+    background-color: rgb(224, 176, 131);
+    color: red;
+    border-color: rgb(224, 176, 131);
+    padding: 15px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+#vd{
+    background-color: rgb(224, 176, 131);
+    color: red;
+    border-color: rgb(224, 176, 131);
+    padding: 15px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+/* std_admin */
+.admin{
+    background-color: rgb(224, 176, 131);
+    color: rgb(60, 29, 8);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    height: 1000;
+    border-radius: 15px;
+}
+#uname{
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: bisque;
+    font-size: 20px;
+}
+#pwd{
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: bisque;
+    font-size: 20px;
+}
+#logbutton{
+    background-color: rgb(203, 110, 24);
+    color: black;
+    border-color: rgb(191, 104, 22);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: 21px;
+}
+/* std_Information_Form */
+#fbody{
+    display: flex;
+    background-image: url("GCETTS.jpg");
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    margin: 50px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+.form{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(248, 246, 245);
+    text-align: left;
+    font-size: 18px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+input{
+    width: 100%;
+}
+#fbox{
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: bisque;
+    font-size: 20px;
+}
+#gen{
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 100px;
+    border-color: bisque;
+    font-size: 20px;
+}
+#login{
+    background-color: rgba(236, 204, 153, 0.885);
+    color: rgb(196, 118, 44);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    height: 1000;
+    border-radius: 15px;
+}
+#heading{
+    color: bisque;
+}
+#sub{
+    background-color: rgb(196, 118, 44);
+    color: rgb(64, 4, 4);
+    border-color: rgb(190, 108, 32);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+    border-radius: 5px;
+    font-size: 25px;
+}
